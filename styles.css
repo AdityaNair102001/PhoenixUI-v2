@@ -1,0 +1,187 @@
+:root {
+  --heading-font: "Merriweather", serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "m m m"
+    "f f f";
+  grid-template-rows: 5fr 85fr 10fr;
+  /* height: 100vh; */
+}
+
+.header {
+  grid-area: h;
+  background-color: #e9ecef;
+  text-align: center;
+  width: 100%;
+}
+.main {
+  grid-area: m;
+  background-color: white;
+  text-align: center;
+}
+.footer {
+  grid-area: f;
+  background-color: #495057;
+  box-shadow: 0px 20px 20px 20px #212529;
+}
+
+.break {
+  background-color: #ced4da;
+  width: 100%;
+  height: 0.01rem;
+}
+
+.heading {
+  text-align: left;
+  font-family: var(--heading-font);
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.description {
+  margin: 0.5rem;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.title {
+  text-align: left;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f8f9fa;
+  margin: 0.5rem;
+  box-shadow: inset 0px 0px 2px 0px #212529;
+}
+
+.avatar-lg {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+}
+
+.avatar-lg > img {
+  border-radius: 10rem;
+}
+
+.avatar-md {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+}
+
+.avatar-md > img {
+  border-radius: 10rem;
+}
+
+.avatar-sm {
+  width: 50px;
+  height: 50px;
+  margin: 0.5rem;
+}
+
+.avatar-sm > img {
+  border-radius: 10em;
+}
+
+.alert {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: large;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: rgb(189, 255, 189);
+}
+
+.error {
+  background-color: rgb(255, 180, 180);
+}
+
+.warning {
+  background-color: rgb(254, 255, 184);
+}
+
+.button {
+  border-radius: 2px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.primary {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.primary:hover {
+  background-color: #212529;
+}
+
+.outlined {
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  transition-duration: 0.5s;
+}
+
+.outlined:hover {
+  background-color: black;
+  color: white;
+}
+
+.text {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.text:hover {
+  font-weight: bold;
+}
+
+@media (min-width: 40em) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      "h m m"
+      "h m m"
+      "f f f";
+    grid-template-columns: 15% 85% 0%;
+    grid-template-rows: 0fr 90fr 10fr;
+  }
+  .navigation {
+    display: block;
+    position: fixed;
+  }
+
+  .header {
+    grid-area: h;
+    background-color: #e9ecef;
+    text-align: center;
+    box-shadow: 0px 20px 20px 20px #212529;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .alert {
+    padding: 1rem;
+  }
+}
