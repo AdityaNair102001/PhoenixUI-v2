@@ -22,7 +22,6 @@ header {
 
 .header-arrow-btn {
   margin: 1rem;
-  /* position: fixed; */
   position: absolute;
   right: 0;
   background-color: transparent;
@@ -377,7 +376,6 @@ header {
   .header {
     grid-area: h;
     background-color: #e9ecef;
-    /* background-color: #eef2ff; */
     text-align: center;
     display: block;
     position: sticky;
@@ -386,11 +384,13 @@ header {
     min-height: 100vh;
   }
 
-  /* .header {
-    grid-area: h;
-    background-color: #e9ecef;
-    text-align: center;
-  } */
+  .header-title-parent:hover {
+    background-color: white;
+  }
+
+  .header-title:hover {
+    font-weight: 400;
+  }
 
   .heading {
     font-size: 3rem;
