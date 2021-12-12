@@ -109,6 +109,7 @@ header {
   /* box-shadow: inset 0px 0px 2px 0px #212529; */
   box-shadow: 0px 0px 2px 0px #212529;
   border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 .container:hover {
@@ -349,8 +350,19 @@ header {
   top: 5px;
 }
 
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 2px 0px #212529;
+}
+
 .nav-brand-name {
   font-size: 1rem;
+  font-family: "Playfair Display", serif;
 }
 
 .nav-icons {
