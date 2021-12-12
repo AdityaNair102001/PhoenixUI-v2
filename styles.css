@@ -314,6 +314,14 @@ header {
   list-style-type: circle;
 }
 
+.list-none {
+  list-style-type: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+}
+
 .list-numeral {
   list-style-type: decimal;
 }
@@ -339,6 +347,14 @@ header {
   right: 5px;
   color: white;
   top: 5px;
+}
+
+.nav-brand-name {
+  font-size: 1rem;
+}
+
+.nav-icons {
+  margin: 0.3rem;
 }
 
 .me {
@@ -428,6 +444,10 @@ header {
     top: 7px;
     bottom: 7px;
     padding: 1px;
+  }
+
+  .nav-icons {
+    margin: 1rem;
   }
 
   .me {
