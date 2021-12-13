@@ -317,6 +317,7 @@ header {
 
 .list-none {
   list-style-type: none;
+  padding: 0;
 }
 
 .list-inline > li {
@@ -355,9 +356,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background: linear-gradient(to left, black 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
   color: white;
   box-shadow: 0px 0px 2px 0px #212529;
+  position: relative;
 }
 
 .hamburger-brand {
@@ -367,8 +371,8 @@ header {
 
 .nav-brand-name {
   font-family: "Playfair Display", serif;
-  margin: 0.5rem;
   cursor: pointer;
+  transition: all 0.8s;
 }
 
 .hamburger-btn {
@@ -381,32 +385,24 @@ header {
   width: 100%;
   background-color: white;
   margin: 0.5rem 0rem;
-}
-
-.nav-categories > li:hover {
-  background-color: white;
-  color: black;
-  font-size: 3rem;
+  transition: all 0.8s;
 }
 
 .nav-categories-li {
-  padding: 0.5rem 0.5rem;
   transition: all 0.8s;
   border-radius: 3px;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
-.nav-categories-li:hover {
-  color: black;
-  background-color: white;
-}
+.nav-categories {
+  visibility: hidden;
 
-.nav-options-desktop {
-  display: none;
+  position: absolute;
 }
 
 .nav-icons {
-  margin: 0.3rem;
+  margin: 0.6rem;
   cursor: pointer;
 }
 
@@ -499,6 +495,16 @@ header {
     padding: 1px;
   }
 
+  .nav {
+    background: black;
+    color: white;
+    justify-content: space-between;
+  }
+
+  .nav:hover {
+    color: white;
+  }
+
   .hamburger-btn {
     display: none;
   }
@@ -512,9 +518,22 @@ header {
     font-size: 1.5rem;
   }
 
+  .nav-categories {
+    display: block;
+    visibility: visible;
+  }
+
   .nav-categories-li {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
+    transition: all 0.8s;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .nav-categories-li:hover {
+    color: black;
+    background-color: white;
   }
 
   .nav-icons {
