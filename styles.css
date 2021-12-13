@@ -360,13 +360,54 @@ header {
   box-shadow: 0px 0px 2px 0px #212529;
 }
 
+.hamburger-brand {
+  display: flex;
+  align-items: center;
+}
+
 .nav-brand-name {
-  font-size: 1rem;
   font-family: "Playfair Display", serif;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  margin-left: 5px;
+  width: 30%;
+}
+
+.hamburger-dash {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  margin: 0.5rem 0rem;
+}
+
+.nav-categories > li:hover {
+  background-color: white;
+  color: black;
+  font-size: 3rem;
+}
+
+.nav-categories-li {
+  padding: 0.5rem 0.5rem;
+  transition: all 0.8s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-categories-li:hover {
+  color: black;
+  background-color: white;
+}
+
+.nav-options-desktop {
+  display: none;
 }
 
 .nav-icons {
   margin: 0.3rem;
+  cursor: pointer;
 }
 
 .me {
@@ -456,6 +497,24 @@ header {
     top: 7px;
     bottom: 7px;
     padding: 1px;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .nav-options-desktop {
+    display: block;
+  }
+
+  .nav-brand-name {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-categories-li {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
   }
 
   .nav-icons {
