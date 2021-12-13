@@ -12,7 +12,6 @@ let navigationOpen = false;
 function myFunction(x) {
   if (x.matches) {
     // If media query matches
-    document.body.style.backgroundColor = "yellow";
     nav.style.color = "white";
     nav.style.backgroundColor = "black";
     nav.style.justifyContent = "space-between";
