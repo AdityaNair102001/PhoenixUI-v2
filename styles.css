@@ -521,6 +521,7 @@ header {
   .nav-categories {
     display: block;
     visibility: visible;
+    position: static;
   }
 
   .nav-categories-li {
