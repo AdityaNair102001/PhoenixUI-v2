@@ -3,7 +3,7 @@ const headerSemantic = document.getElementById("header-semantic");
 const toggleBtn = document.getElementById("toggleBtn");
 const navItem = document.getElementById("nav-item");
 let headerOpen = false;
-toggleBtn.style.transform = "rotate(180deg)";
+// toggleBtn.style.transform = "rotate(180deg)";
 headerPopBtn.addEventListener("click", () => {
   if (headerOpen === false) {
     headerSemantic.style.display = "block";
